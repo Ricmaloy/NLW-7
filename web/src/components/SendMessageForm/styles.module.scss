@@ -1,0 +1,133 @@
+.sendMessageFormWrapper {
+    background: #1b1b1f;
+    padding: 2.4rem;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+}
+
+.rocketSeal {
+    position: absolute;
+    top: -4rem;
+    right: 2rem;
+}
+
+.signOutButton {
+    background: transparent;
+    border: 0;
+    color: #c4c4cc;
+
+    position: absolute;
+    left: 2.4rem;
+    top: 2.4rem;
+
+    transition: filter .2s;
+
+    &:hover {
+        filter: brightness(.9);
+    }
+}
+
+.userInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .userImage {
+        padding: .3rem;
+        background: linear-gradient(100deg, #ff008e 0.48%, #ffcd1e 100%);
+        border-radius: 50%;
+        line-height: 0;
+        
+        img {
+            width: 9.5rem;
+            height: 9.5rem;
+            border-radius: 50%;
+            border: 4px solid #121214;
+        }
+    }
+
+    .userName {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin-top: 1.6rem;
+    }
+
+    .userGithub {
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+
+        color: #c4c4cc;
+        margin-top: .8rem;
+
+        svg {
+            margin-right: .8rem;
+        }
+    }
+}
+
+.sendMessageForm {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+
+    margin-top: 4.8rem;
+    background: #202024;
+
+    label {
+        padding: 1.8rem 2.4rem;
+        font-size: 2rem;
+        background: #29292e;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    textarea {
+        background: transparent;
+        border: 0;
+        padding: 2.4rem;
+        resize: none;
+        height: 16rem;
+        color: #e1e1e6;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &::placeholder {
+            color: #8d8d99;
+        }
+    }
+
+    button {
+        align-self: flex-end;
+        border: 0;
+        background: #ff008e;
+        margin: 2.4rem;
+        padding: 0 3.2rem;
+        height: 4rem;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: filter .2s;
+    
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+}
